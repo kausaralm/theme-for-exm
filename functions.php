@@ -112,9 +112,12 @@ add_action( 'widgets_init', 'theme_for_exm_widgets_init' );
  * Enqueue scripts and styles.
  */
 function theme_for_exm_scripts() {
+
+	wp_enqueue_style( 'theme-for-exm-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
+
 	wp_enqueue_style( 'theme-for-exm-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'theme-for-exm-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'theme-for-exm-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), 'v3.3.5', true );
 
 	wp_enqueue_script( 'theme-for-exm-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -143,5 +146,10 @@ require get_template_directory() . '/inc/extras.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Bootstrap Nav-walker additions.
+ */
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 
