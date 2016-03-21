@@ -2,8 +2,6 @@
 /**
  * themeforexm functions and definitions.
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
  * @package themeforexm
  */
 
@@ -146,7 +144,4 @@ require get_template_directory() . '/inc/extras.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
+
