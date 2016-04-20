@@ -1,7 +1,7 @@
 theme-for-starter
 ===
 
-Hi. I'm a starter theme called `theme-for-exm`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called `theme-for-starter`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 * Underscore framework added.
 * Branding as my own theme name.
